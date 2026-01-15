@@ -1,0 +1,210 @@
+Bài Viết
+         
+                    Hỏi Đáp
+                 
+            Thảo Luận
+                Thông tin    Chưa có thông tin
+          
+            Tất cả thông tin
+              vi 
+                Tiếng Việt
+            
+                English
+               
+                    Viblo
+                  
+                    Viblo Code
+                  
+                    Viblo CTF
+                  
+                    Viblo CV
+                  
+                    Viblo Learning
+                  
+                    Viblo Partner
+                  
+                    Viblo Battle
+                 
+                        new
+                     
+                    Viblo Interview
+                 new 
+    Đăng nhập/Đăng ký
+        
+        +16
+        Cỡ chữ  18px   Độ cao hàng  1.75  
+                Mặc định
+             
+                Toàn màn hình
+             
+            Màu nền
+           
+            Đặt lại
+                 
+                    Nguyen Ngoc Hung
+                 @nguyenngochungb 
+                    Theo dõi
+                 
+        1.0K
+    
+        14
+    
+        11
+      
+            Đã đăng vào thg 9 20, 2021 6:27 CH
+          
+    7 phút đọc
+   26.2K 
+                2
+             
+                7
+              
+            Tìm hiểu về Next.js (Phần 1)
+               
+                Báo cáo
+             
+                Thêm vào series của tôi
+                         
+            Bài đăng này đã không được cập nhật trong 4 năm
+         1. Mở đầu
+Next.js là một framework dựa trên React cho phép bạn tối ưu hoá hiệu năng, hỗ trợ SEO và trải nghiệm người dùng thông qua pre-rendering: Server Side Rendering (SSR) và Static Site Generation (SSG).
+Ở phần này mình sẽ chia sẻ với các bạn những kiến thức cơ bản về Next.js và khi nào chúng ta nên dùng nó trong dự án.
+
+2. Khái niệm Next.js
+Next.js là một open-source React front-end framework được bổ sung các tính năng như  Server Side Rendering (SSR) và Static Site Generation (SSG). Next.js được xây dựng dựa trên thư viện React có nghĩa là Next.js lấy những lợi thế của React và bổ sung các tính năng.
+Server Side Rendering: SSR cho phép máy chủ access tất cả required data và xử lý javaScript để hiển thị lên trang web. Theo cơ chế này thì hầu hết các xử lý logic đều ở phía máy chủ. Trong đó, máy chủ thực hiện xử lý và tiến hành các thao tác với cơ sở dữ liệu để thông dịch (render) ra thành HTML, sau đó gửi phản hồi cho khách hàng. Trình duyệt của khách hàng cũng sẽ chỉ hiển thị HTML này.
+Search Engine Optimization (SEO):  Sử dụng SSR cũng mang lại cho bạn lợi thế về SEO, giúp trang web của bạn hiển thị cao hơn trên các trang kết quả của công cụ tìm kiếm. SSR làm cho các trang web xếp hạng tốt hơn cho SEO vì chúng tải nhanh hơn và nhiều nội dung trang web có thể được quét bởi các trình theo dõi SEO.
+Next.js cũng cho phép bạn chỉnh sửa thẻ <head> của một trang web, điều mà bạn không thể thực hiện trong React. Thẻ <head> góp phần vào xếp hạng SEO của trang web.
+3. Tại sao nên sử dụng Next.js?
+Ưu điểm chính của Next.js là hỗ trợ SSR tích hợp để tăng hiệu suất và SEO. Server Side Rendering (SSR) hoạt động bằng cách thay đổi luồng yêu cầu (altering the request flow) của ứng dụng React để tất cả các thành phần ngoại trừ máy khách gửi thông tin của họ đến máy chủ.
+Với tất cả thông tin trên máy chủ, nó có thể hiển thị trước (pre-render) HTML của trang. Máy khách có thể gửi một yêu cầu đến máy chủ và nhận toàn bộ trang HTML thay vì yêu cầu từng thành phần riêng lẻ với client-side rendering.
+
+
+3. Các tính năng của Next.js?
+
+Server-Side rendering (SSR)
+Static site generation (SSG)
+Single-Page application (SPA)
+Development of faster application
+Optimization of pages
+SEO websites
+Automatic code splitting
+
+4. Next.js được sử dụng để làm gì?
+Bây giờ câu hỏi đặt ra là khi nào chúng ta nên sử dụng Next.Js. Chúng ta có thể thấy rất nhiều tính năng và lợi thế mà Next.Js có. Chúng ta có thể sử dụng Next.Js để phát triển các ứng dụng web của mình khi trong dự án cần những thứ sau:
+4.1 Những website thương mai điện tử
+Next.js cho phép bạn tạo những trang web hiệu suất cao, thân thiện với người dùng và SEO tốt.
+4.2  Khi SEO quan trọng
+Khi làm bất kỳ trang web nào trên internet, SEO luôn được tính đến. Vì các trang web này được thực hiện client-side, nên SEO không hoạt động tốt trong hầu hết các single-page applications. Khi Google thu thập dữ liệu cho indexing, chỉ cần chọn một loạt các tệp JS và thẻ div có id, khiến không thể lập indexing một trang web.
+4.3  Landing page
+Khi chúng ta phải xây dựng một landing page, thì chúng ta có thể sử dụng Next.Js, vì nó giúp các marketers rất nhiều trong việc tạo trang marketing-focused.
+4.4 Marketing websites
+Vì ứng dụng sẽ được hiển thị trên máy chủ, thời gian tải có thể được cải thiện đáng kể. Đặc biệt là trong những trường hợp khách truy cập sử dụng thiết bị chậm hơn.
+4.5  Static websites
+Viết một trang web hoàn toàn bằng HTML không chỉ khó và tốn thời gian mà bạn còn khó có thể viết code tốt hơn những gì được tạo sẵn (ít nhất là về kích thước package).
+5. Ưu điểm của Next.js?
+5.1 Split code
+Nó tự động breaks code để làm cho trang tải nhanh hơn. Đó là lý do tại sao hầu hết các trang web lớn sử dụng Next.js đều có khả năng tải trang nhanh hơn mặc dù chúng được xây dựng cho một lượng lớn người xem.
+5.2 Brings organic traffic
+Các trang web được phát triển bằng Next JS không chỉ nhanh mà còn đơn giản để tìm kiếm và cung cấp trải nghiệm người dùng tuyệt vời. Ba yếu tố: tốc độ, cấu trúc và trải nghiệm người dùng, là những yếu tố xếp hạng quan trọng sẽ tăng thứ hạng trên công cụ tìm kiếm của Google trang web của bạn.
+5.3 Trải nghiệm người dùng tốt
+Việc thuận lợi nhất của việc sử dụng Next JS là trải nghiệm người dùng, chỉ đứng thứ hai sau tốc độ. Marketers yêu thích sự độc lập trong thiết kế, đặc biệt là trong ngành thương mại điện tử, nơi nhiều cửa hàng trực tuyến trông giống nhau và có một trải nghiệm người dùng tốt sẽ giúp  cửa hàng nổi bật hơn so với các đối thủ cạnh tranh.
+5.4 Bảo mật
+An toàn vì nó không có liên kết trực tiếp đến database, dependencies, user data hoặc thông tin bí mật khác.
+5.5 Thời gian tải trang nhanh hơn
+Tiếp theo, vì các trang web JS là tĩnh, chúng cực kỳ nhanh và khách truy cập sẽ rất hài lòng với kết quả. Nó cũng có thể tự động tối ưu hóa các trang bất cứ khi nào nó được yêu cầu.
+5.6 Cộng đồng hỗ trợ lớn
+Next.Js là React framework nên rất dễ nhận được sự hỗ trợ nhanh chóng khi bạn cần. Bạn không cần phải xây dựng nó từ đầu, vì sẽ luôn có một nhà phát triển React hỗ trợ nhanh chóng cho bạn.
+5.7 Server-side rendering
+Cải thiện khả năng bảo vệ dữ liệu và tuân thủ PIPA. Server-side rendering có các ưu điểm sau:
+
+Cải thiện hiệu năng
+Hỗ trợ SEO tốt hơn
+Social sharing
+Có ít vấn đề hơn với khả năng tương thích của trình duyệt.
+
+Tài liệu tham khảo
+https://www.educative.io/blog/nextjs-tutorial-examples
+https://medium.com/geekculture/why-should-you-learn-next-js-in-2021-what-are-the-benefits-8292d79bc50c
+    
+        frontend
+    
+        nextjs
+    
+        ReactJS
+       
+    All rights reserved
+     
+                Báo cáo
+             
+                Thêm vào series của tôi
+                         
+            Mục lục
+          1. Mở đầu2. Khái niệm Next.js3. Tại sao nên sử dụng Next.js?3. Các tính năng của Next.js?4. Next.js được sử dụng để làm gì?4.1 Những website thương mai điện tử4.2  Khi SEO quan trọng4.3  Landing page4.4 Marketing websites4.5  Static websites5. Ưu điểm của Next.js?5.1 Split code5.2 Brings organic traffic5.3 Trải nghiệm người dùng tốt5.4 Bảo mật5.5 Thời gian tải trang nhanh hơn5.6 Cộng đồng hỗ trợ lớn5.7 Server-side renderingTài liệu tham khảo     Bình luận  Đang tải thêm bình luận...    
+                +16
+                 •  Cỡ chữ  18px   Độ cao hàng  1.75  
+                Mặc định
+             
+                Toàn màn hình
+             
+            Màu nền
+           
+            Đặt lại
+          •  •  •  
+                    Tài nguyên
+                 
+                            Bài viết
+                         
+                            Tổ chức
+                         
+                            Câu hỏi
+                         
+                            Tags
+                         
+                            Videos
+                         
+                            Tác giả
+                         
+                            Thảo luận
+                         
+                            Đề xuất hệ thống
+                         Công cụ Machine Learning Trạng thái hệ thống 
+                    Dịch vụ
+                 
+                                    Viblo
+                                
+                                    Viblo Code
+                                
+                                    Viblo CTF
+                                
+                                    Viblo CV
+                                
+                                    Viblo Learning
+                                
+                                    Viblo Partner
+                                
+                                    Viblo Battle
+                                
+                                    Viblo Interview
+                                 
+                        Ứng dụng di động
+                        
+                    Liên kết
+                      
+                    © 2025
+                    Viblo. All rights reserved.
+                 Về chúng tôi Phản hồi 
+                            Giúp đỡ
+                         
+                            FAQs
+                         
+                            RSS
+                         
+                            Điều khoản
+                                
+                    Hãy đăng ký một tài khoản Viblo để nhận được nhiều bài viết thú vị hơn.
+                 
+                    Đăng nhập
+                 
+                    Đăng kí
+                  window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u){return {layout:e,data:[{}],fetch:{"0":{swiperOption:{slidesPerView:h,spaceBetween:10,slidesPerGroup:h,loopFillGroupWithBlank:c,loop:c,autoplay:{delay:3000,disableOnInteraction:b},pagination:{el:".swiper-pagination",clickable:c}},swiper:a}},error:a,state:{announcements:{indicator:d,items:[],processing:b,pinnedItem:[],post:{},related:[]},auth:{user:a,roles:a,lastSeens:a,guest:c,showAuthDialog:b,showLetRegister:c,reminderLogin:b,avtUser:m,is_partner:a},badges:{items:{}},bookmarks:{bookmarks:a,pagination:a,type:"posts"},commentsList:{comments:{},pagination:{}},conditionCreateOrganization:{conditionReputations:100},config:{analytics_track_id:"G-HF9XE2NDGV",banners:[{active:c,name:"Viblo Mid-Autumn Challenge 2025",image:"https:\u002F\u002Fimages.viblo.asia\u002Ffull\u002F9b87c5be-f71f-4e99-a52f-200388a82d5c.png",link:"https:\u002F\u002Fwww.facebook.com\u002Fviblo.asia\u002Fposts\u002Fpfbid02bgJpS8cGpqnesCC49TBEXP69LTBZNwfRG9mwZmCELrqdCqFvuW8JboJKNC43coo7l",background_color:"#203f66"}],currentBannerIndex:d,motd:[{text:"\u003E\u003E Tham gia Facebook group \"Viblo Community\" để cùng nhau học tập và kết nối \u003C\u003C",link:"https:\u002F\u002Ffacebook.com\u002Fgroups\u002Fviblo.community.official"}],currentMotdIndex:a,currentBgIndex:a,logo:[],currentLogoIndex:d,vars:{search_host:"https:\u002F\u002Fviblo.asia\u002Fv2",special_organizations:["sun-ai","sun-cyber","phelab","sun-rnd-devops"],special_profiles:["algorithm","security","announcer","ai","fundamentals","engineering","namanh11611"],cname_organizations:["blog.sun-asterisk.ai"],cname_profiles:[],is_special_organization:a,is_special_profile:a}},hovercard:{all:{}},log:{searchLog:a,CTRLogs:[],clickedLog:a},mayFestTime:{startTime:"2025-05-01T00:00:00+07:00",endTime:"2025-05-31T23:59:59+07:00",active:c,happening:b,link_annc:"https:\u002F\u002Fviblo.asia\u002Fannouncements\u002Fchinh-thuc-cong-bo-the-le-chi-tiet-su-kien-viblo-mayfest-2025-decoding-a-decade-BQyJKvRQ4Me",tag_event:"MayFest2025"},notifications:{data:[],batch:d,lastBatch:h,unread:d,loadNoti:c},oneTap:{isDisplayed:b,isSkipped:b},organizationsUser:{organizations:[]},pageHistory:{current:{path:i,hash:n,params:{post:"tim-hieu-ve-nextjs-phan-1-V3m5WQkwZO7"},fullPath:i},previous:a},postHomeFeed:{byId:{},all:[],pagination:a,current:[],sidebar:{users:[],questions:[],organizations:[],organizationPartners:[],userPartners:[],suggestionChallenges:[],suggestionCourses:[],suggestionPuzzles:[]},postOrgLevelDiamond:a,postOrgLevelGold:a,postOrgLevelSilver:a},postView:{post:{id:o,slug:p,transliterated:q,user_id:j,contents:"# 1. Mở đầu\n[Next.js ](https:\u002F\u002Fnextjs.org\u002F)là một framework dựa trên React cho phép bạn tối ưu hoá hiệu năng, hỗ trợ SEO và trải nghiệm người dùng thông qua pre-rendering: **Server Side Rendering (SSR)** và **Static Site Generation (SSG).**\nỞ phần này mình sẽ chia sẻ với các bạn những kiến thức cơ bản về Next.js và khi nào chúng ta nên dùng nó trong dự án.\n![](https:\u002F\u002Fimages.viblo.asia\u002F76f93c33-4f5a-4bd1-a9ee-6c2ddceaea11.png)\n\n# 2. Khái niệm Next.js\nNext.js là một open-source React front-end framework được bổ sung các tính năng như  Server Side Rendering (SSR) và Static Site Generation (SSG). Next.js được xây dựng dựa trên thư viện React có nghĩa là Next.js lấy những lợi thế của React và bổ sung các tính năng.\n\n**Server Side Rendering:** SSR cho phép máy chủ access tất cả required data và xử lý javaScript để hiển thị lên trang web. Theo cơ chế này thì hầu hết các xử lý logic đều ở phía máy chủ. Trong đó, máy chủ thực hiện xử lý và tiến hành các thao tác với cơ sở dữ liệu để thông dịch (render) ra thành HTML, sau đó gửi phản hồi cho khách hàng. Trình duyệt của khách hàng cũng sẽ chỉ hiển thị HTML này.\n\n**Search Engine Optimization (SEO):**  Sử dụng SSR cũng mang lại cho bạn lợi thế về SEO, giúp trang web của bạn hiển thị cao hơn trên các trang kết quả của công cụ tìm kiếm. SSR làm cho các trang web xếp hạng tốt hơn cho SEO vì chúng tải nhanh hơn và nhiều nội dung trang web có thể được quét bởi các trình theo dõi SEO.\n\nNext.js cũng cho phép bạn chỉnh sửa thẻ `\u003Chead\u003E` của một trang web, điều mà bạn không thể thực hiện trong React. Thẻ `\u003Chead\u003E` góp phần vào xếp hạng SEO của trang web.\n\n# 3. Tại sao nên sử dụng Next.js?\nƯu điểm chính của Next.js là hỗ trợ SSR tích hợp để tăng hiệu suất và SEO. Server Side Rendering (SSR) hoạt động bằng cách thay đổi luồng yêu cầu (altering the request flow) của ứng dụng React để tất cả các thành phần ngoại trừ máy khách gửi thông tin của họ đến máy chủ.\n\nVới tất cả thông tin trên máy chủ, nó có thể hiển thị trước (pre-render) HTML của trang. Máy khách có thể gửi một yêu cầu đến máy chủ và nhận toàn bộ trang HTML thay vì yêu cầu từng thành phần riêng lẻ với client-side rendering.\n\n![](https:\u002F\u002Fimages.viblo.asia\u002F7f5f91d9-7326-4770-8345-0c035c686d52.png)\n![](https:\u002F\u002Fimages.viblo.asia\u002F9625d493-ce76-4687-9375-2b99fd839192.png)\n\n# 3. Các tính năng của Next.js?\n* Server-Side rendering (SSR)\n* Static site generation (SSG)\n* Single-Page application (SPA)\n* Development of faster application\n* Optimization of pages\n* SEO websites\n* Automatic code splitting\n\n# 4. Next.js được sử dụng để làm gì?\nBây giờ câu hỏi đặt ra là khi nào chúng ta nên sử dụng Next.Js. Chúng ta có thể thấy rất nhiều tính năng và lợi thế mà Next.Js có. Chúng ta có thể sử dụng Next.Js để phát triển các ứng dụng web của mình khi trong dự án cần những thứ sau:\n## 4.1 Những website thương mai điện tử\n\nNext.js cho phép bạn tạo những trang web hiệu suất cao, thân thiện với người dùng và SEO tốt.\n## 4.2  Khi SEO quan trọng\n\nKhi làm bất kỳ trang web nào trên internet, SEO luôn được tính đến. Vì các trang web này được thực hiện client-side, nên SEO không hoạt động tốt trong hầu hết các single-page applications. Khi Google thu thập dữ liệu cho indexing, chỉ cần chọn một loạt các tệp JS và thẻ `div` có `id`, khiến không thể lập indexing một trang web. \n## 4.3  Landing page\nKhi chúng ta phải xây dựng một landing page, thì chúng ta có thể sử dụng Next.Js, vì nó giúp các marketers rất nhiều trong việc tạo trang marketing-focused.\n\n## 4.4 Marketing websites\nVì ứng dụng sẽ được hiển thị trên máy chủ, thời gian tải có thể được cải thiện đáng kể. Đặc biệt là trong những trường hợp khách truy cập sử dụng thiết bị chậm hơn.\n\n## 4.5  Static websites\nViết một trang web hoàn toàn bằng HTML không chỉ khó và tốn thời gian mà bạn còn khó có thể viết code tốt hơn những gì được tạo sẵn (ít nhất là về kích thước package).\n\n# 5. Ưu điểm của Next.js?\n## 5.1 Split code\nNó tự động breaks code để làm cho trang tải nhanh hơn. Đó là lý do tại sao hầu hết các trang web lớn sử dụng Next.js đều có khả năng tải trang nhanh hơn mặc dù chúng được xây dựng cho một lượng lớn người xem.\n\n## 5.2 Brings organic traffic\nCác trang web được phát triển bằng Next JS không chỉ nhanh mà còn đơn giản để tìm kiếm và cung cấp trải nghiệm người dùng tuyệt vời. Ba yếu tố: tốc độ, cấu trúc và trải nghiệm người dùng, là những yếu tố xếp hạng quan trọng sẽ tăng thứ hạng trên công cụ tìm kiếm của Google trang web của bạn.\n\n## 5.3 Trải nghiệm người dùng tốt\nViệc thuận lợi nhất của việc sử dụng Next JS là trải nghiệm người dùng, chỉ đứng thứ hai sau tốc độ. Marketers yêu thích sự độc lập trong thiết kế, đặc biệt là trong ngành thương mại điện tử, nơi nhiều cửa hàng trực tuyến trông giống nhau và có một trải nghiệm người dùng tốt sẽ giúp  cửa hàng nổi bật hơn so với các đối thủ cạnh tranh.\n\n## 5.4 Bảo mật\nAn toàn vì nó không có liên kết trực tiếp đến database, dependencies, user data hoặc thông tin bí mật khác.\n\n## 5.5 Thời gian tải trang nhanh hơn\nTiếp theo, vì các trang web JS là tĩnh, chúng cực kỳ nhanh và khách truy cập sẽ rất hài lòng với kết quả. Nó cũng có thể tự động tối ưu hóa các trang bất cứ khi nào nó được yêu cầu.\n\n## 5.6 Cộng đồng hỗ trợ lớn\nNext.Js là React framework nên rất dễ nhận được sự hỗ trợ nhanh chóng khi bạn cần. Bạn không cần phải xây dựng nó từ đầu, vì sẽ luôn có một nhà phát triển React hỗ trợ nhanh chóng cho bạn.\n\n## 5.7 Server-side rendering\nCải thiện khả năng bảo vệ dữ liệu và tuân thủ PIPA. Server-side rendering có các ưu điểm sau:\n* Cải thiện hiệu năng\n* Hỗ trợ SEO tốt hơn\n* Social sharing\n* Có ít vấn đề hơn với khả năng tương thích của trình duyệt.\n\n\n# Tài liệu tham khảo\nhttps:\u002F\u002Fwww.educative.io\u002Fblog\u002Fnextjs-tutorial-examples\n\nhttps:\u002F\u002Fmedium.com\u002Fgeekculture\u002Fwhy-should-you-learn-next-js-in-2021-what-are-the-benefits-8292d79bc50c",moderation:a,preview:{image:a,teaser:"1. Mở đầu Next.js là một framework dựa trên React cho phép bạn tối ưu hoá hiệu năng, hỗ trợ SEO và trải nghiệm người dùng thông qua pre-rendering: Server Side Rendering (SSR) và Static Site Generation...",contents:"1. Mở đầu\nNext.js là một framework dựa trên React cho phép bạn tối ưu hoá hiệu năng, hỗ trợ SEO và trải nghiệm người dùng thông qua pre-rendering: Server Side Rendering (SSR) và Static Site Generation (SSG).\nỞ phần này mình sẽ chia sẻ với các bạn những kiến thức cơ bản về Next.js và khi nào chúng ta nên dùng nó trong dự án.\n\n2. Khái niệm Next.js\nNe..."},current_revision:a,reading_time:k,series_id:a,video_id:a,slide_url:a,last_edited_at:"2021-09-20T15:13:38+07:00",puzzle_hash_id:a,license:"all_rights_reserved",seo_setting:{data:{id:3746,title:"Tìm hiểu về Next.js (Phần 1) - Viblo",description:"1. Mở đầu\nNext.js là một framework dựa trên React cho phép bạn tối ưu hoá hiệu năng, hỗ trợ SEO và trải nghiệm người dùng thông qua pre-rendering: Server Side Rendering (SSR) và Static Site Generation (SSG).",seoable_type:"Post"}},tags:{data:[{slug:f,name:f},{slug:g,name:g},{slug:r,name:s}]},summary:a},related:a,relatedOrganizations:a,fetchedAt:new Date(1764991269957),invalidated:b,series:a,proposals:[],video:a,tracking:a,suggestionChallenges:[],suggestionCourses:[],suggestionPuzzles:[],comments:{byId:t,threads:u,loading:c}},profile:{profile:a,contact:{byId:t,threads:u,loading:c},followers:{current:[],pagination:{}},following:{current:[],pagination:{}},posts:{byId:{},all:[],pagination:{},current:[]},questions:{byId:{},current:[],pagination:{}},skills:{skills:[]}},promoted:{users:{},posts:[],tags:[],currentSharingId:a},questionHomeFeed:{sidebar:{users:[],posts:[],organizationPartners:[],userPartners:[],interviewQuestions:[]}},questionView:{question:a,answers:{byId:{},all:[]},subscribers:[],invalidated:c,comments:{byId:{},threads:{}}},seriesView:{series:{},posts:[],requests:[],seriesHome:a,paginationSeries:a,comments:{byId:{},threads:{}}},settings:{perPage:20,layout:"simple",theme:e,homepage:e,complete_survey:b,complete_tour:n,viewed_popup_newsletter:c},survey:{externalUrl:a},toast:{messages:[],newPosts:d},typeControl:{fontSize:18,lineHeight:1.75,fullScreen:b,modeTheme:e},userRankings:{current:[],byId:{}},vueTour:{step0:b,step1:b,step2:b,step3:b,step4:b,writePostStep0:b,writePostStep1:b,writePostStep2:b,writePostStep3:b,showBackgroud:b,triggerUserMenu:"click",doneFetchData:b},witePostNewYear:{startTime:"2024-03-21T16:22:46+07:00",endTime:"2024-03-21T16:23:22+07:00",active:b,happening:b,link_annc:"https:\u002F\u002Fviblo.asia\u002Fannouncements\u002Fkhai-but-dau-xuan-2024-tat-tan-tat-the-le-tham-gia-co-tai-day-zOQJw5bpVMP",tag_event:"KhaiButDauXuan"},wrappedUpTime:{startTime:"2023-01-01T00:00:00+07:00",endTime:"2024-02-29T07:08:42+07:00",lastImage:"93172d7c-6be6-4352-a306-014d43ba62bf.png"},__modules:{comments:{},"post-feed":{},"question-feed":{byId:{},current:[],pagination:{}},"user-list":{current:[],pagination:{}}},__plugins:{pushNewPosts:{},pushNotifications:{}},__utils:{entities:{},schemas:{}},entities:{organizations:{all:{}},posts:{all:{"57465":{id:o,slug:p,title:"Tìm hiểu về Next.js (Phần 1)",transliterated:q,tags:{data:[{slug:f,name:f},{slug:g,name:g},{slug:r,name:s}]},user_id:j,canonical_url:"https:\u002F\u002Fviblo.asia\u002Fp\u002Ftim-hieu-ve-nextjs-phan-1-V3m5WQkwZO7",uploads:[{uuid:"76f93c33-4f5a-4bd1-a9ee-6c2ddceaea11",width:1006,height:727,extension:l},{uuid:"7f5f91d9-7326-4770-8345-0c035c686d52",width:511,height:405,extension:l},{uuid:"9625d493-ce76-4687-9375-2b99fd839192",width:594,height:400,extension:l}],status:"public",promoted:b,trending:b,views_count:26239,clips_count:k,comments_count:2,clipped:b,points:16,rated_value:a,scheduled_publish_at:a,created_at:"2021-09-18T19:48:29+07:00",updated_at:"2025-12-06T09:30:01+07:00",published_at:"2021-09-20T18:27:13+07:00",reading_time:k,can_share_social:c}}},questions:{all:{}},tags:{all:{}},users:{all:{"66005":{id:j,username:"nguyenngochungb",name:"Nguyen Ngoc Hung",avatar:m,following:b,reputation:1059,followers_count:14,posts_count:11,questions_count:d,answers_count:d,total_post_views:a,banned_at:a,level_partner:a}}}},organizationView:{followers:{current:[],pagination:{}},members:{current:[],pagination:{}},technologyStacks:{technologies:[]},topMembers:{topMembers:[]}},tagView:{followers:{current:[],pagination:{}},posts:{byId:{},all:[],pagination:{},current:[]},questions:{byId:{},current:[],pagination:{}}},writeups:{puzzlePosts:{byId:{},all:[],pagination:{},puzzle:a}},i18n:{locale:"vi"}},serverRendered:c,routePath:i,config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null,false,true,0,"default","frontend","nextjs",1,"\u002Fp\u002Ftim-hieu-ve-nextjs-phan-1-V3m5WQkwZO7",66005,7,"png","8050c07d-31b2-43b4-83d6-10d4e4dda62e.jpg","",57465,"V3m5WQkwZO7","tim-hieu-ve-nextjs-phan-1","reactjs","ReactJS",{},{}));

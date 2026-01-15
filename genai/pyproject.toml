@@ -1,0 +1,15 @@
+[project]
+name = "genai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "networkx>=3.6.1",
+    "nltk>=3.9.2",
+    "numpy>=2.4.0",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.16.3",
+    "sumy>=0.11.0",
+    "underthesea>=8.3.0",
+]
