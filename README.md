@@ -29,7 +29,7 @@ Relevant Context Selection
    ↓
 LLM (Ollama via LangChain)
    ↓
-Context-Grounded Response
+Context-Grounded Response<br>
 📂 Project Structure<br>
 LLMS/<br>
 │── main.py                # End-to-end RAG pipeline<br>
@@ -40,3 +40,4 @@ LLMS/<br>
 │── README.md<br>
 │── LICENSE
 >>>>>>> 23dfdac (Initial commit: RAG-based LLM system with LangChain)
+
